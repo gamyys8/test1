@@ -26,5 +26,23 @@
 			<li>list item</li>
 			<li>list item</li>	
 		</ul>
+		
+		<script>
+			
+			var btn = document.getElementById("btn");
+			var nav = document.getElementsByClassName("nav")[0];
+			var bool = true;
+			btn.onclick=function(){
+				if(bool){
+				     nav.style.display="none";
+				     bool=false;
+				}else{
+					 nav.style.display="block";
+				     bool=true;
+				}
+				
+			}
+			
+		</script>
 	</body>
 </html>
